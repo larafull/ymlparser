@@ -24,7 +24,7 @@ sudo apt-get install php-xmlrpc php-mbstring
 Require package via Composer:
 
 ```
-composer require larafull/ymlparser ~1.1
+composer require larafull/ymlparser:dev-master
 ```
 
 ## Usage
