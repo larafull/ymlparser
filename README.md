@@ -10,6 +10,9 @@ YMLParser out of box have two drivers for different file sizes:
 * SimpleXML - for small xml files
 
 
+## Laravel YML parsing notice:
+
+On current step Laravel is not required, but development of this package is going inside Laravel project.
 
 ## Installation
 
@@ -28,6 +31,27 @@ composer require larafull/ymlparser:dev-master
 ```
 
 ## Usage
+
+### Remote YML parsing in Laravel etc
+
+Since v1.2 remote parsing is available:
+
+```php
+
+use YMLParser\YMLParser;
+use YMLParser\Driver\XMLReader;
+
+
+$url = 'https://somedomain/somefolder/somefile.yml.xml';
+
+$parser = new YMLParser(new XMLReader);
+
+$parser->open($url);
+
+$offers = $parsers->getOffers(); // etc
+
+```
+
 
 ### Getting all offers from file
 
@@ -76,3 +100,24 @@ dump($offers[0]['params']);
 * PHP: >= 7.1
 * xmlrpc extension
 * mbstring extension
+
+
+## Modifications after fork
+
+DriverInterface can be changed. For capability check static variables will be added.
+
+Migrations to create models from YML will be available later.
+
+## Contribution and your ideas
+
+Create pull requests or/and message me here:
+
+Telegram: @vvmspace
+
+Twitter: @vvmspace
+
+VK: https://vk.com/it007
+
+Instagram: https://instagram.com/insta.tagil
+
+E-mail: vvmspace@gmail.com
