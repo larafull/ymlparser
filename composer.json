@@ -1,9 +1,9 @@
 {
-    "name": "serkin/ymlparser",
+    "name": "larafull/ymlparser",
     "type": "library",
-    "description": "Parser for yml(yandex.market.ru) files",
-    "keywords": ["yml", "yandex"],
-    "homepage": "https://github.com/serkin/ymlparser",
+    "description": "YML (Yandex XML format) parser for Laravel",
+    "keywords": ["yml", "yandex", "larafull"],
+    "homepage": "https://github.com/larafull/ymlparser",
     "license": "MIT",
     "authors": [
         {
@@ -11,10 +11,16 @@
             "email": "serkin.alexander@gmail.com",
             "homepage": "http://linkedin.com/in/SerkinAlexander",
             "role": "Developer"
+        },
+        {
+            "name": "Vladimir V. Myagdeev",
+            "email": "vvmspace@gmail.com",
+            "homepage": "https://github.com/vvmspace",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=5.5",
+        "php": ">=7.1",
         "ext-xmlrpc": "*",
         "ext-mbstring": "*"
     },
